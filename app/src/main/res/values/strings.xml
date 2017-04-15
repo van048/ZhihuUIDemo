@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">ZhihuUIDemo</string>
     <string name="scrolling_header_behavior">ben.cn.zhihuuidemo.ScrollingHeaderBehavior</string>
+    <string name="scrolling_bottom_behavior">ben.cn.zhihuuidemo.ScrollingBottomBehavior</string>
 </resources>

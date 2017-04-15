@@ -22,10 +22,11 @@
     <LinearLayout
         android:id="@+id/main_bottom"
         android:layout_width="match_parent"
-        android:layout_height="56dp"
+        android:layout_height="@dimen/main_bottom_height"
         android:layout_gravity="bottom"
         android:background="@color/colorPrimary"
-        android:orientation="horizontal" />
+        android:orientation="horizontal"
+        app:layout_behavior="@string/scrolling_bottom_behavior" />
 
     <android.support.design.widget.FloatingActionButton
         android:layout_width="60dp"

@@ -8,7 +8,7 @@ import android.view.View;
 
 abstract class BaseScrollingBehavior extends CoordinatorLayout.Behavior {
     private static final int ANIM_OUT_THRESHOLD = 50;
-    private static final int ANIM_IN_THRESHOLD = -ANIM_OUT_THRESHOLD / 2;
+    private static final int ANIM_IN_THRESHOLD = -ANIM_OUT_THRESHOLD;
     private int mCirculatingDy;
     private boolean mCirculatingDown;
     private boolean mLastScrollDirectionUp; // record whether the last scroll direction is up
