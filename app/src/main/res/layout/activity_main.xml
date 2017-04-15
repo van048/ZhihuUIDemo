@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -15,7 +16,8 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/main_header_height"
         android:background="@color/colorPrimary"
-        android:orientation="horizontal" />
+        android:orientation="horizontal"
+        app:layout_behavior="@string/scrolling_header_behavior" />
 
     <LinearLayout
         android:id="@+id/main_bottom"
