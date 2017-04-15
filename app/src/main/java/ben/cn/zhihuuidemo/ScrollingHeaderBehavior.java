@@ -9,7 +9,6 @@ import android.view.View;
 public class ScrollingHeaderBehavior extends BaseScrollingBehavior {
     private View mHeaderView;
     private final int mHeaderViewHeight;
-    private static final long ANIM_DURATION = 200;
     private ValueAnimator mHeaderViewAnimator;
     private int mNewTop; // record the changing top during animation
 

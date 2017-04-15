@@ -7,6 +7,7 @@ import android.util.AttributeSet;
 import android.view.View;
 
 abstract class BaseScrollingBehavior extends CoordinatorLayout.Behavior {
+    static final long ANIM_DURATION = 200;
     private static final int ANIM_OUT_THRESHOLD = 50;
     private static final int ANIM_IN_THRESHOLD = -ANIM_OUT_THRESHOLD;
     private int mCirculatingDy;

@@ -9,7 +9,6 @@ import android.view.View;
 public class ScrollingBottomBehavior extends BaseScrollingBehavior {
     private View mBottomView;
     private final int mBottomViewHeight;
-    private static final long ANIM_DURATION = 200;
     private ValueAnimator mBottomViewAnimator;
     private int mNewTop; // record the changing top during animation
     private int mOriginalTop;
