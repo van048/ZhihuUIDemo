@@ -3,4 +3,5 @@
     <dimen name="main_header_height">56dp</dimen>
     <dimen name="main_bottom_height">56dp</dimen>
     <dimen name="main_fab_size">60dp</dimen>
+    <dimen name="main_fab_container_size">80dp</dimen>
 </resources>

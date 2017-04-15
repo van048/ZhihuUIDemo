@@ -6,6 +6,18 @@
     android:layout_height="match_parent"
     tools:context="ben.cn.zhihuuidemo.MainActivity">
 
+    <FrameLayout
+        android:layout_width="@dimen/main_fab_container_size"
+        android:layout_height="@dimen/main_fab_container_size"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="60dp"
+        app:layout_behavior="@string/scrolling_fab_behavior">
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="@dimen/main_fab_size"
+            android:layout_height="@dimen/main_fab_size" />
+    </FrameLayout>
+
     <android.support.v7.widget.RecyclerView
         android:id="@+id/main_recycler_view"
         android:layout_width="match_parent"
@@ -27,15 +39,6 @@
         android:background="@color/colorPrimary"
         android:orientation="horizontal"
         app:layout_behavior="@string/scrolling_bottom_behavior" />
-
-    <android.support.design.widget.FloatingActionButton
-        android:layout_width="@dimen/main_fab_size"
-        android:layout_height="@dimen/main_fab_size"
-        android:layout_gravity="bottom|end"
-        android:layout_marginBottom="80dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginRight="20dp"
-        app:layout_behavior="@string/scrolling_fab_behavior" />
 
 
 </android.support.design.widget.CoordinatorLayout>
