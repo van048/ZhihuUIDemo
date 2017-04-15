@@ -8,7 +8,7 @@ import android.view.View;
 
 public class ScrollingBottomBehavior extends BaseScrollingBehavior {
     private View mBottomView;
-    private final int mBottomViewHeight;
+    private int mBottomViewHeight;
     private ValueAnimator mBottomViewAnimator;
     private int mNewTop; // record the changing top during animation
     private int mOriginalTop;
@@ -16,7 +16,6 @@ public class ScrollingBottomBehavior extends BaseScrollingBehavior {
     public ScrollingBottomBehavior(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
         setupAnimator();
-        mBottomViewHeight = (int) context.getResources().getDimension(R.dimen.main_bottom_height);
     }
 
     @Override
@@ -25,6 +24,7 @@ public class ScrollingBottomBehavior extends BaseScrollingBehavior {
         if (mBottomView == null) {
             mBottomView = child;
             mNewTop = mOriginalTop = mBottomView.getTop();
+            mBottomViewHeight = mBottomView.getMeasuredHeight();
         }
     }
 

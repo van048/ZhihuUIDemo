@@ -8,14 +8,13 @@ import android.view.View;
 
 public class ScrollingHeaderBehavior extends BaseScrollingBehavior {
     private View mHeaderView;
-    private final int mHeaderViewHeight;
+    private int mHeaderViewHeight;
     private ValueAnimator mHeaderViewAnimator;
     private int mNewTop; // record the changing top during animation
 
     public ScrollingHeaderBehavior(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
         setupAnimator();
-        mHeaderViewHeight = (int) context.getResources().getDimension(R.dimen.main_header_height);
     }
 
     @Override
@@ -23,6 +22,7 @@ public class ScrollingHeaderBehavior extends BaseScrollingBehavior {
         super.onNestedScroll(coordinatorLayout, child, target, dxConsumed, dyConsumed, dxUnconsumed, dyUnconsumed);
         if (mHeaderView == null) {
             mHeaderView = child;
+            mHeaderViewHeight = mHeaderView.getMeasuredHeight();
             mNewTop = 0;
         }
     }
