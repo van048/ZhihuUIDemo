@@ -29,12 +29,13 @@
         app:layout_behavior="@string/scrolling_bottom_behavior" />
 
     <android.support.design.widget.FloatingActionButton
-        android:layout_width="60dp"
-        android:layout_height="60dp"
+        android:layout_width="@dimen/main_fab_size"
+        android:layout_height="@dimen/main_fab_size"
         android:layout_gravity="bottom|end"
         android:layout_marginBottom="80dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginRight="20dp" />
+        android:layout_marginRight="20dp"
+        app:layout_behavior="@string/scrolling_fab_behavior" />
 
 
 </android.support.design.widget.CoordinatorLayout>
