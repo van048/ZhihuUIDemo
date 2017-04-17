@@ -19,12 +19,12 @@ public class ScrollingHeaderBehavior extends BaseScrollingBehavior {
 
     @Override
     public void onNestedScroll(CoordinatorLayout coordinatorLayout, View child, View target, int dxConsumed, int dyConsumed, int dxUnconsumed, int dyUnconsumed) {
-        super.onNestedScroll(coordinatorLayout, child, target, dxConsumed, dyConsumed, dxUnconsumed, dyUnconsumed);
         if (mHeaderView == null) {
             mHeaderView = child;
             mHeaderViewHeight = mHeaderView.getMeasuredHeight();
             mNewTop = 0;
         }
+        super.onNestedScroll(coordinatorLayout, child, target, dxConsumed, dyConsumed, dxUnconsumed, dyUnconsumed);
     }
 
     @Override

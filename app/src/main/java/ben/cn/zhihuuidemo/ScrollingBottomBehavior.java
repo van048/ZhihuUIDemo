@@ -20,12 +20,12 @@ public class ScrollingBottomBehavior extends BaseScrollingBehavior {
 
     @Override
     public void onNestedScroll(CoordinatorLayout coordinatorLayout, View child, View target, int dxConsumed, int dyConsumed, int dxUnconsumed, int dyUnconsumed) {
-        super.onNestedScroll(coordinatorLayout, child, target, dxConsumed, dyConsumed, dxUnconsumed, dyUnconsumed);
         if (mBottomView == null) {
             mBottomView = child;
             mNewTop = mOriginalTop = mBottomView.getTop();
             mBottomViewHeight = mBottomView.getMeasuredHeight();
         }
+        super.onNestedScroll(coordinatorLayout, child, target, dxConsumed, dyConsumed, dxUnconsumed, dyUnconsumed);
     }
 
     @Override

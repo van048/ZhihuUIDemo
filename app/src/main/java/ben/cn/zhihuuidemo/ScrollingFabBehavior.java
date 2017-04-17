@@ -22,12 +22,12 @@ public class ScrollingFabBehavior extends BaseScrollingBehavior {
 
     @Override
     public void onNestedScroll(CoordinatorLayout coordinatorLayout, View child, View target, int dxConsumed, int dyConsumed, int dxUnconsumed, int dyUnconsumed) {
-        super.onNestedScroll(coordinatorLayout, child, target, dxConsumed, dyConsumed, dxUnconsumed, dyUnconsumed);
         if (mFabView == null) {
             mFabView = child;
             mNewTop = mOriginalTop = mFabView.getTop();
             mFabViewHeight = mFabView.getMeasuredHeight();
         }
+        super.onNestedScroll(coordinatorLayout, child, target, dxConsumed, dyConsumed, dxUnconsumed, dyUnconsumed);
     }
 
     @Override
